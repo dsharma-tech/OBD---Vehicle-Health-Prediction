@@ -1,2 +1,2 @@
-# OBD---Vehicle-Health-Prediction
+# OBD-Vehicle-Health-Prediction
 On Board Diagnostics to predict Vehicle Health
