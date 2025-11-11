@@ -1,101 +1,98 @@
-# OBD-Vehicle-Health-Prediction
-On Board Diagnostics to predict Vehicle Health
-🚘 OBD (On-Board Diagnostics) Machine Learning Project
-📖 What is OBD?
+# 🚘 OBD (On-Board Diagnostics) Machine Learning Project
 
-OBD (On-Board Diagnostics) is a standardized system found in most modern vehicles that monitors and records data from various sensors across the car’s engine, transmission, and exhaust systems.
-It provides access to real-time performance data and diagnostic trouble codes (DTCs) — which help detect issues like fuel inefficiency, engine misfires, or emission problems.
+## 📖 What is OBD?
+**OBD (On-Board Diagnostics)** is a built-in system in modern vehicles that continuously monitors data from sensors across various components like the **engine**, **fuel system**, and **emission controls**.  
+It provides real-time data and **Diagnostic Trouble Codes (DTCs)** that help detect and identify issues in vehicle performance.
 
-In this project, we leverage OBD-generated data to perform machine learning analysis that helps understand vehicle behavior, detect anomalies, and predict key performance metrics.
+In this project, we leverage **OBD sensor data** to perform **data-driven vehicle health prediction** using **Machine Learning models**.  
+By analyzing key OBD parameters, our models can estimate overall **vehicle condition**, detect potential anomalies, and predict maintenance needs.
 
-📊 Project Overview
+---
 
-This project demonstrates how machine learning regression techniques can be applied to OBD vehicle data for performance prediction and diagnostics.
-We explore multiple modeling approaches, optimize them through regularization, and use feature engineering to improve prediction accuracy.
+## 📊 Project Overview
+This project demonstrates how **machine learning regression techniques** can be applied to **OBD vehicle data** to predict vehicle health and performance trends.  
+We go through data cleaning, feature engineering, model building, optimization, and comparison to identify the best model for accurate predictions.
 
-🧠 Key Objectives
+---
 
-Import and clean OBD data
+## 🧠 Key Objectives
+- Import and clean OBD data  
+- Perform **Exploratory Data Analysis (EDA)** and **visualization**  
+- Handle missing values and outliers  
+- Build **Linear Regression** and **Polynomial Regression** models  
+- Apply **Regularization (Ridge, Lasso, Elastic Net)** for optimization  
+- Predict **vehicle health status** using regression models  
+- Compare models **before and after feature engineering**
 
-Perform EDA (Exploratory Data Analysis) and visualization
+---
 
-Handle missing values and outliers
+## ⚙️ Project Workflow
 
-Build Linear and Polynomial Regression models
+### 1. Data Import & Cleaning
+- Load raw OBD dataset  
+- Check for null values and duplicates  
+- Remove or impute missing data  
+- Clean irrelevant records  
 
-Optimize models using Regularization (Ridge, Lasso, Elastic Net)
+### 2. Exploratory Data Analysis (EDA)
+- Visualize feature distributions and relationships  
+- Analyze correlations among OBD parameters  
+- Identify patterns linked to vehicle performance and health  
 
-Apply Feature Engineering and compare performance improvements
+### 3. Data Preprocessing
+- Handle missing values  
+- Detect and remove outliers  
+- Normalize and scale numerical data  
 
-⚙️ Project Workflow
-1. Data Import & Cleaning
+### 4. Model Development
+Implemented models for predictive analysis:
+- **Linear Regression**  
+- **Polynomial Regression**
 
-Import raw OBD dataset
-
-Check and handle null values
-
-Remove irrelevant columns or corrupted records
-
-2. Exploratory Data Analysis (EDA)
-
-Visualize data distributions and relationships
-
-Analyze correlations among vehicle parameters
-
-Identify trends and anomalies
-
-3. Data Preprocessing
-
-Null value imputation
-
-Outlier detection and removal
-
-Data scaling and normalization
-
-4. Model Development
-
-Implemented the following models:
-
-Linear Regression
-
-Polynomial Regression
-
-5. Model Optimization (Regularization)
-
+### 5. Model Optimization (Regularization)
 Applied regularization to avoid overfitting and improve generalization:
+- **Ridge Regression**  
+- **Lasso Regression**  
+- **Elastic Net**
 
-Ridge Regression
+### 6. Model Evaluation
+Evaluated model performance using:
+- **Mean Squared Error (MSE)**  
+- **R² Score**  
+- Visualization of predicted vs actual vehicle health metrics  
 
-Lasso Regression
+### 7. Feature Engineering & Re-Evaluation
+- Added derived and interaction features  
+- Retrained models with new features  
+- Compared results **before and after feature engineering**  
+- Improved vehicle health prediction accuracy  
 
-Elastic Net
+---
 
-Compared model performance on:
+## 📈 Results & Insights
+- Regularized models (especially **Ridge** and **Elastic Net**) provided better generalization.  
+- Feature engineering significantly boosted vehicle health prediction accuracy.  
+- Machine Learning proved effective in modeling OBD data for **predictive vehicle diagnostics**.  
+- Demonstrated how regression models can forecast **vehicle health status** and potential maintenance requirements.
 
-Mean Squared Error (MSE)
+---
 
-R² Score
+## 🧰 Technologies Used
+| Category | Tools & Libraries |
+|-----------|------------------|
+| Programming | Python |
+| Data Handling | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn |
+| Machine Learning | Scikit-learn |
+| Environment | Google Colab / Jupyter Notebook |
 
-6. Feature Engineering & Re-Evaluation
+---
 
-Created derived features based on existing variables
+## 🚀 Future Enhancements
+- Integrate **live OBD-II sensor data** using devices like ELM327  
+- Build a **real-time dashboard** for vehicle health monitoring  
+- Use **deep learning** for more accurate predictions  
+- Implement **fault detection and preventive maintenance alerts**
 
-Retrained and compared model performance before and after feature engineering
-
-📈 Results & Insights
-
-Regularization significantly improved model stability.
-
-Ridge and Elastic Net showed better generalization on test data.
-
-Feature engineering boosted accuracy and reduced residual errors.
-
-Demonstrated the usefulness of ML for analyzing and predicting vehicle diagnostics trends.
-
-🧰 Technologies Used
-Category	Tools & Libraries
-Programming	Python
-Data Handling	Pandas, NumPy
-Visualization	Matplotlib, Seaborn
-Machine Learning	Scikit-learn
-Environment	Jupyter / Google Colab
+---
+---
