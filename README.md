@@ -95,4 +95,11 @@ Evaluated model performance using:
 - Implement **fault detection and preventive maintenance alerts**
 
 ---
+## 📂 Dataset Information
+- **Dataset Source:** [Kaggle - OBD-II Dataset (obdii-ds3)](https://www.kaggle.com/datasets/cephasax/obdii-ds3)  
+- After downloading the dataset as a **ZIP file**, you will find **3 CSV files** inside.  
+- For this project, we use the file: **`exp1_14drivers_14cars_dailyRoutes.csv`**.  
+- This file contains OBD sensor readings, vehicle details, and time-based features for multiple drivers and cars.
+---
+---
 ---
